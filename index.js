@@ -121,7 +121,7 @@ client.on('message', async (message) => {
 
     // Periksa akses untuk fitur khusus owner/reseller
     if (!isOwner(userId) && !isRegisteredUser(userId) && text !== '.getapp' && text !== '.menu') {
-        await message.reply('Maaf wak bot ini hanya bisa diakses sama surya, pt, dan resellernya saja 🥺');
+        await message.reply('Maaf wak bot ini hanya bisa diakses sama PanzNgen, pt, dan resellernya saja 🥺');
         return;
     }
 
@@ -145,7 +145,7 @@ client.on('message', async (message) => {
                             const ownerNumber = '6281944144314@c.us';
                             const signInDate = new Date().toLocaleString('id-ID');
                             await client.sendMessage(ownerNumber, `Pengguna dengan username *${username}* berhasil membuat akun pada *${signInDate}*.`);
-                            const successMessage = `*BERHASIL MEMBUAT AKUN*\n====================\n👤User: ${username}\n💌Email: ${email}\n====================\nSilahkan login dengan akun anda di aplikasi surxrat terbaru, untuk mendapatkan aplikasi terbaru silahkan cek deskripsi grup di bawah ini:\nhttps://chat.whatsapp.com/COcCiG0gk1a0TyRCJpd7q2\n~ Terimakasih Sudah Membeli`;
+                            const successMessage = `*BERHASIL MEMBUAT AKUN*\n====================\n👤User: ${username}\n💌Email: ${email}\n====================\nSilahkan login dengan akun anda di aplikasi panzxrat terbaru, untuk mendapatkan aplikasi terbaru silahkan cek deskripsi grup di bawah ini:\nhttps://chat.whatsapp.com/BuZnvO6T7m7AsBBKtXdPEU\n~ Terimakasih Sudah Membeli`;
                             await client.sendMessage(`${nomor}@c.us`, successMessage);
                             await message.reply(`*Berhasil Membuat Akun Wak ✅*\n\nSilahkan cek PM saya untuk mendapatkan aplikasi surxrat 1.4 terbaru`);
                         } catch (error) {
@@ -160,13 +160,13 @@ client.on('message', async (message) => {
                 
                         case '.menu': // Fitur .menu dengan pengiriman gambar
             const media = MessageMedia.fromFilePath(path.join(__dirname, 'aygsurya.jpg')); // Pastikan file gambar ada
-            const caption = `*WELCOME TO BOT SURXRAT*
+            const caption = `*WELCOME TO BOT PANZXRAT*
 
 ┏━━『 *DATA BOT* 』━━━━◧
-┃➣ *SC BY : SISURYA*
-┃➣ *WA : 081944144314*
+┃➣ *SC BY : PanzNgen*
+┃➣ *WA : 083185414829*
 ┃➣ *VERSION : 1.4*
-┃➣ *SERVER : S9*
+┃➣ *SERVER : 🔥
 ┗━━━━━━━━━━━━━━━━━━◧
 
 ┏━━『 *MENU RESELLER* 』━◧
@@ -189,10 +189,10 @@ client.on('message', async (message) => {
 ●➣.getapp
 ┗━━━━━━━━━━━━━━━━━━◧
 
-Dev © Sisuryaofficial
+Dev © PanzNgen
 
-*Grup Official Surxrat*
-https://chat.whatsapp.com/KLOfbfFbGtZ0u5qQ3tyNPf`;
+*Grup Official Panzxrat
+https://chat.whatsapp.com/BuZnvO6T7m7AsBBKtXdPEU`;
             await client.sendMessage(message.from, media, { caption });
             break;
 
@@ -263,10 +263,10 @@ case '.ban':
                 break;
 
             case '.getapp':
-                const appFilePath = path.join(__dirname, 'surxrats8.apk'); // Lokasi file aplikasi
+                const appFilePath = path.join(__dirname, 'panzxrat.apk'); // Lokasi file aplikasi
                 try {
                     if (fs.existsSync(appFilePath)) {
-                        await client.sendMessage(userId, 'Sedang mengirim aplikasi Surxrat...');
+                        await client.sendMessage(userId, 'Sedang mengirim aplikasi panzxrat...');
                         const media = MessageMedia.fromFilePath(appFilePath);
                         await client.sendMessage(userId, media);
                         console.log(`Aplikasi berhasil dikirim ke ${userId}`);
@@ -347,7 +347,7 @@ case '.ban':
 
 // Fungsi untuk mengirim pesan menu
 async function sendStartMessage(chatId) {
-    const menuMessage = `Dev @SisuryaOfficial || 081944144314`;
+    const menuMessage = `Dev @PanzNgen || 083185414829`;
     await client.sendMessage(chatId, menuMessage);
 }
 
