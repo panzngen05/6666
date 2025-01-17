@@ -166,7 +166,7 @@ client.on('message', async (message) => {
 ┃➣ *SC BY : PanzNgen*
 ┃➣ *WA : 083185414829*
 ┃➣ *VERSION : 1.4*
-┃➣ *SERVER : 🔥
+┃➣ *SERVER : 🔥*
 ┗━━━━━━━━━━━━━━━━━━◧
 
 ┏━━『 *MENU RESELLER* 』━◧
