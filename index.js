@@ -137,7 +137,7 @@ client.on('message', async (message) => {
                     const [username, nomor] = args.split(',');
                     if (username && nomor) {
                         const email = `${username}@gmail.com`;
-                        const password = 'sisurya'; // Jangan diubah
+                        const password = 'panzngen'; // Jangan diubah
                         try {
                             const userRecord = await auth.createUser({ email, password });
                             registeredUsers[username] = { email, username, nomor };
@@ -147,7 +147,7 @@ client.on('message', async (message) => {
                             await client.sendMessage(ownerNumber, `Pengguna dengan username *${username}* berhasil membuat akun pada *${signInDate}*.`);
                             const successMessage = `*BERHASIL MEMBUAT AKUN*\n====================\n👤User: ${username}\n💌Email: ${email}\n====================\nSilahkan login dengan akun anda di aplikasi panzxrat terbaru, untuk mendapatkan aplikasi terbaru silahkan cek deskripsi grup di bawah ini:\nhttps://chat.whatsapp.com/BuZnvO6T7m7AsBBKtXdPEU\n~ Terimakasih Sudah Membeli`;
                             await client.sendMessage(`${nomor}@c.us`, successMessage);
-                            await message.reply(`*Berhasil Membuat Akun Wak ✅*\n\nSilahkan cek PM saya untuk mendapatkan aplikasi surxrat 1.4 terbaru`);
+                            await message.reply(`*Berhasil Membuat Akun Wak ✅*\n\nSilahkan cek PM saya untuk mendapatkan aplikasi panzxrat 1.4 terbaru`);
                         } catch (error) {
                             await message.reply(`❌ Gagal Membuat Akun Karena Username Sudah Dipakai`);
                             console.error("Error membuat akun:", error);
@@ -159,7 +159,7 @@ client.on('message', async (message) => {
                 break;
                 
                         case '.menu': // Fitur .menu dengan pengiriman gambar
-            const media = MessageMedia.fromFilePath(path.join(__dirname, 'aygsurya.jpg')); // Pastikan file gambar ada
+            const media = MessageMedia.fromFilePath(path.join(__dirname, 'logo.png')); // Pastikan file gambar ada
             const caption = `*WELCOME TO BOT PANZXRAT*
 
 ┏━━『 *DATA BOT* 』━━━━◧
